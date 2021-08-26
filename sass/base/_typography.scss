@@ -1,27 +1,27 @@
 $poppins-font-path: "../../fonts";
 
 @font-face {
-  font-weight: 400;
   font-family: Poppins;
+  font-weight: 400;
   src: url("#{$poppins-font-path}/Poppins-Regular.ttf");
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-display: swap;
   font-family: Poppins;
   src: url("#{$poppins-font-path}/Poppins-SemiBold.ttf");
   font-style: normal;
   font-weight: 600;
+  font-display: swap;
 }
 
 @font-face {
-  font-display: swap;
   font-family: Poppins;
   src: url("#{$poppins-font-path}/Poppins-Bold.ttf");
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
 }
 
 $font: Poppins, sans-serif;
@@ -35,3 +35,17 @@ $body2-bold: 700 0.875rem/1.5rem $font;
 $body2-regular: 400 0.875rem/1.5rem $font;
 $caption-regular: 400 0.75rem/1rem $font;
 $caption-bold: 600 0.75rem/1rem $font;
+
+:root {
+  --font: #{$font};
+  --headline1: #{headline1};
+  --headline2: #{$headline2};
+  --headline3: #{$headline3};
+  --button: #{$button};
+  --body1-regular: #{$body1-regular};
+  --body1-bold: #{$body1-bold};
+  --body2-bold: #{$body2-bold};
+  --body2-regular: #{$body2-regular};
+  --caption-regular: #{$caption-regular};
+  --caption-bold: #{$caption-bold};
+}
