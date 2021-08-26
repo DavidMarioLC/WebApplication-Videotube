@@ -15,7 +15,7 @@
   padding: pxToRem(4);
   font: $body2-regular;
   border-radius: pxToRem(4);
-  right: 0;
+  right: pxToRem(4);
   bottom: pxToRem(4);
   // opacity: 0;
   //show with js
