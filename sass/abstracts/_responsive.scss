@@ -1,0 +1,23 @@
+@mixin media-header-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-tabs-md {
+  @media screen and (min-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-videoGrid-md {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin media-mainvideo-md {
+  @media screen and (min-width: 1200px) {
+    @content;
+  }
+}

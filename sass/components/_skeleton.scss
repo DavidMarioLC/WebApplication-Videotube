@@ -1,0 +1,66 @@
+.card__img.skeleton {
+  width: pxToRem(300);
+  height: pxToRem(170);
+}
+
+.card__avatar.skeleton {
+  width: pxToRem(32);
+  height: pxToRem(32);
+  border-radius: 50%;
+}
+
+.card__title.skeleton {
+  width: pxToRem(230);
+  height: pxToRem(20);
+}
+
+.card__user.skeleton {
+  width: pxToRem(162);
+  height: pxToRem(14);
+}
+
+/*thumbnail*/
+.thumbnail__image.skeleton {
+  width: pxToRem(195);
+
+  height: pxToRem(109);
+}
+
+.thumbnail__title.skeleton {
+  width: pxToRem(120);
+  height: pxToRem(20);
+}
+
+.thumbnail__user.skeleton {
+  width: pxToRem(120);
+  height: pxToRem(20);
+}
+
+.thumbnail__caption.skeleton {
+  width: pxToRem(30);
+  height: pxToRem(14);
+}
+
+.skeleton {
+  background: $black-2;
+  border-radius: pxToRem(2);
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  background-size: 40px 100%;
+  background-repeat: no-repeat;
+  animation: shine 1s ease infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: left -50px center;
+  }
+
+  100% {
+    background-position: right -50px center;
+  }
+}

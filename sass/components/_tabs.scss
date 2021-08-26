@@ -1,0 +1,41 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: pxToRem(24);
+  padding: pxToRem(16) 0;
+  overflow: auto;
+
+  &__item {
+    flex-shrink: 0;
+  }
+
+  &__button {
+    cursor: pointer;
+    font: $button;
+    padding: pxToRem(8) pxToRem(16);
+    border: 1px solid $grey;
+    background: $black;
+    color: $white;
+    border-radius: pxToRem(44);
+
+    &--active {
+      background: $white;
+      color: $primary;
+    }
+    &:active {
+      transform: scale(0.98);
+    }
+  }
+
+  &::-webkit-scrollbar {
+    width: pxToRem(16);
+    height: pxToRem(4);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $grey;
+  }
+  &::-webkit-scrollbar-track {
+    background: $primary;
+  }
+}

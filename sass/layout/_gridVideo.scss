@@ -1,0 +1,15 @@
+.grid-video {
+  padding: pxToRem(32) 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 300px;
+  place-items: center center;
+
+  gap: 2rem;
+}
+
+@include media-videoGrid-md {
+  .grid-video {
+    place-items: start start;
+  }
+}

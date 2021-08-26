@@ -1,0 +1,16 @@
+.thumbnails {
+  display: grid;
+  grid-template-rows: min-content;
+  gap: 1rem;
+}
+
+.thumbnails__title {
+  font: $body1-bold;
+  color: $white;
+}
+
+.thumbnails__grid {
+  display: grid;
+  gap: pxToRem(16);
+  grid-template-columns: 1fr;
+}

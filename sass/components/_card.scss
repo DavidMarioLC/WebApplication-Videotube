@@ -1,0 +1,63 @@
+.card {
+  display: inline-block;
+  max-width: 300px;
+}
+
+.card__img {
+  position: relative;
+}
+
+.card__time {
+  position: absolute;
+
+  color: $white;
+  background: $primary;
+  padding: pxToRem(4);
+  font: $body2-regular;
+  border-radius: pxToRem(4);
+  right: 0;
+  bottom: pxToRem(4);
+  // opacity: 0;
+  //show with js
+}
+
+.card__body {
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-areas:
+    "avatar title"
+    "avatar user"
+    "avatar caption";
+  grid-template-rows: repeat(3, min-content);
+  column-gap: pxToRem(16);
+  row-gap: pxToRem(8);
+  margin-top: pxToRem(12);
+}
+
+.card__avatar {
+  grid-area: avatar;
+  &img {
+    // width: auto;
+    height: auto;
+  }
+}
+
+.card__title {
+  font: $body1-bold;
+  color: $white;
+  grid-area: title;
+}
+
+.card__user {
+  grid-area: user;
+}
+
+.card__caption {
+  grid-area: caption;
+}
+
+.card__user,
+.card__caption {
+  font: $body1-regular;
+  color: $grey;
+}

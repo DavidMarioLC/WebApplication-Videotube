@@ -1,0 +1,55 @@
+.search {
+  &__input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: none;
+  }
+  &__button {
+    cursor: pointer;
+    border: none;
+    color: $grey;
+    background: none;
+    &:active {
+      transform: scale(0.97);
+    }
+  }
+  &__icon {
+    color: $grey;
+    font-size: pxToRem(24);
+  }
+}
+
+@include media-header-md {
+  .search {
+    display: flex;
+    align-items: center;
+    gap: pxToRem(1);
+    font: $font;
+    min-width: 480px;
+
+    &__input {
+      flex: 1;
+      display: block;
+      border: 1px solid $grey;
+      padding: pxToRem(12) pxToRem(16);
+      background: none;
+      color: $white;
+    }
+    &__button {
+      cursor: pointer;
+      border: none;
+      color: $grey;
+      padding: pxToRem(11) pxToRem(32);
+      display: flex;
+      align-items: center;
+      background: $black;
+    }
+
+    &__icon {
+      cursor: pointer;
+      font-size: pxToRem(16);
+      color: $grey;
+    }
+  }
+}

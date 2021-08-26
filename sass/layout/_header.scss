@@ -1,0 +1,23 @@
+.header {
+  @include wrapper;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: pxToRem(32);
+
+  &__logo {
+  }
+
+  &__search {
+    display: flex;
+    align-items: center;
+  }
+}
+
+@include media-header-md {
+  .header {
+    justify-content: flex-start;
+  }
+}

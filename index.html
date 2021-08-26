@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portafolio videotube" />
+    <title>VideoTube</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="header__logo" href="#">
+        <img
+          class="logo__img"
+          src="./images/logo-videotube.svg"
+          alt="Logo videotube"
+          title="Logo videotube"
+          width="196"
+          height="48"
+          loadings="lazy"
+        />
+      </a>
+      <div class="header__search">
+        <div class="search">
+          <input
+            class="search__input"
+            type="search"
+            placeholder="Buscar video"
+          />
+          <button class="search__button" aria-label="Buscar">
+            <i aria-hidden="true" class="search__icon fi-rs-search"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <ul class="tabs">
+        <li class="tabs__item">
+          <button data-tab="todos" class="tabs__button tabs__button--active">
+            Todos
+          </button>
+        </li>
+        <li class="tabs__item">
+          <button data-tab="musica" class="tabs__button">Música</button>
+        </li>
+        <li class="tabs__item">
+          <button data-tab="programacion" class="tabs__button">
+            Programación
+          </button>
+        </li>
+        <li class="tabs__item">
+          <button data-tab="ux" class="tabs__button">Diseño UX</button>
+        </li>
+      </ul>
+      <section
+        id="video-container"
+        class="grid-video"
+        aria-label="Todos los videos"
+      ></section>
+    </main>
+    <script async type="module" src="./js/main.js"></script>
+  </body>
+</html>

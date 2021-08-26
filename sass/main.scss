@@ -1,0 +1,28 @@
+@import "./abstracts/variables";
+@import "./abstracts/icons";
+@import "./abstracts/functions";
+@import "./abstracts/mixins";
+@import "./abstracts/responsive";
+
+@import "./base/typography";
+@import "./base/reset";
+
+@import "./components/search";
+@import "./components/tabs";
+@import "./components/card";
+@import "./components/skeleton";
+@import "./components/thumbnail";
+@import "./components/video";
+
+@import "./layout/header";
+@import "./layout/main";
+@import "./layout/gridVideo";
+@import "./layout/mainVideo";
+@import "./layout/player";
+@import "./layout/thumbnails";
+
+//@theme
+
+body {
+  background-color: $primary;
+}

@@ -1,0 +1,5 @@
+@mixin wrapper() {
+  max-width: 85%;
+  margin: 0 auto;
+  padding: pxToRem(16) pxToRem(4);
+}

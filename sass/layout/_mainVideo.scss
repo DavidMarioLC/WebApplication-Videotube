@@ -1,0 +1,11 @@
+.mainVideo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+@include media-mainvideo-md {
+  .mainVideo {
+    grid-template-columns: 2fr 1fr;
+  }
+}

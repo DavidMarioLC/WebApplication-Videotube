@@ -1,0 +1,33 @@
+.thumbnail {
+  cursor: pointer;
+  max-width: pxToRem(413);
+  display: grid;
+  grid-template-columns: min-content 1fr;
+  grid-template-rows: repeat(3, min-content);
+  column-gap: pxToRem(8);
+  grid-template-areas: "image title" "image user" "image caption";
+}
+
+.thumbnail__image {
+  grid-area: image;
+}
+
+.thumbnail__title {
+  grid-area: title;
+  color: $white;
+  font: $body2-bold;
+}
+
+.thumbnail__user {
+  grid-area: user;
+}
+
+.thumbnail__caption {
+  grid-area: caption;
+}
+
+.thumbnail__user,
+.thumbnail__caption {
+  font: $caption-regular;
+  color: $grey-2;
+}
